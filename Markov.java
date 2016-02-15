@@ -22,7 +22,7 @@ public class Markov
       while(true)
       {
         //Get some words
-        System.out.print("Enter your phrase > ");
+        System.out.print("Enter your sentence > ");
         BufferedReader in = new BufferedREader (new InputStreamReader(System.in));
         String input = in.readLine() + ".";
         
