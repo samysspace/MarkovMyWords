@@ -104,6 +104,11 @@ public class Markov
         nextWord = wordSelection.get(rand.nextInt(wordSelectionLength));
         newVector.add(nextWord);
       }
-      System.out.println("New phrase: " + newVector.toString());
+      String s = "New phrase: ";
+      for(int i = 0; i < newVector.size(); i++)
+      {
+	 s += newVector.get(i) + " ";
+      }
+      System.out.println(s);  
     }
 }
