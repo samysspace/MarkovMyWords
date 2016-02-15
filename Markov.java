@@ -23,7 +23,7 @@ public class Markov
       {
         //Get some words
         System.out.print("Enter your sentence > ");
-        BufferedReader in = new BufferedREader (new InputStreamReader(System.in));
+        BufferedReader in = new BufferedReader (new InputStreamReader(System.in));
         String input = in.readLine() + ".";
         
         //Add the words to the hash table
@@ -34,7 +34,7 @@ public class Markov
     /**
      * Add the words
      */
-     public static void addWords(String phase)
+     public static void addWords(String phrase)
      {
        //put each word into an array
        String[] words = phrase.split(" ");
@@ -90,7 +90,7 @@ public class Markov
       //Vector to hold the phrase
       Vector<String> newVector = new Vector<String>();
       //String to hold the next word
-      String nextWord = "":
+      String nextWord = "";
       //Select the first word in the sentence
       Vector<String> start = markovChain.get("start");
       int startingWordLength = start.size();
